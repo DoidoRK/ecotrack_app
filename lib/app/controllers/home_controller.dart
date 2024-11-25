@@ -8,16 +8,10 @@ class HomeController extends GetxController {
   void onLogout() {
     newUserController.isLogged.value = false;
     currentIndex.value = 1;
+    Get.offAllNamed('/login');
   }
 
   void changePage(int index) {
     currentIndex.value = index;
-    if(index == 0)  //Verifica se é o perfil
-    {
-      if(!newUserController.isLogged.value){
-        Get.toNamed('/login');
-        currentIndex.value = 1;
-      }
-    }
   }
 }

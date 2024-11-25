@@ -13,6 +13,6 @@ class LoadingController extends GetxController {
     await Future.delayed(const Duration(seconds: 2));
 
     // Navegar para a tela principal (ou qualquer outra tela desejada)
-    Get.offAllNamed('/home');
+    Get.offAllNamed('/login');
   }
 }

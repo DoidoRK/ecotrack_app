@@ -80,8 +80,6 @@ class RegisterInitialPageLogin extends StatelessWidget {
                           text: 'termos de uso', // segunda parte
                           style: TextStyle(
                             decoration: TextDecoration.underline,
-                            decorationColor: Colors.greenAccent,
-                            color: Colors.greenAccent,
                           ),
                         ),
                         TextSpan(
@@ -95,7 +93,7 @@ class RegisterInitialPageLogin extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(height: 160),
+            const SizedBox(height: 120),
             Center(
               child: BottomButtonWidget(text: 'Continuar', onPressed: registerController.onNext, disabled: registerController.isFormInvalid),
             ),
@@ -105,5 +103,3 @@ class RegisterInitialPageLogin extends StatelessWidget {
     );
   }
 }
-
-

@@ -33,7 +33,7 @@ final ThemeData appThemeData = ThemeData(
     textTheme: ButtonTextTheme.accent,
   ),
   inputDecorationTheme:  InputDecorationTheme(
-    suffixIconColor: Color(0xFF1A8300),
+    suffixIconColor: const Color(0xFF1A8300),
     labelStyle: const TextStyle(
       fontFamily: 'Alata',
       color: Color(0xFF1A8300),
@@ -85,7 +85,7 @@ final ThemeData appThemeData = ThemeData(
     fillColor: WidgetStateProperty.resolveWith<Color>(
       (Set<WidgetState> states) {
         if (states.contains(WidgetState.selected)) {
-          return Color(0xFF1A8300); // Preenchimento quando selecionado
+          return const Color(0xFF1A8300); // Preenchimento quando selecionado
         }
         return Colors.white; // Fundo quando não selecionado
       },
@@ -98,5 +98,5 @@ final ThemeData appThemeData = ThemeData(
     iconColor: Color(0xFF1A8300),
     collapsedIconColor: Color(0xFF1A8300),
   ),
-  dividerColor: Color(0xFF1A8300),
+  dividerColor: const Color(0xFF1A8300),
 );

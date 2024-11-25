@@ -39,7 +39,7 @@ class LoginController extends GetxController {
   );
   if (loggedUser.cpf != '' && loggedUser.senha != '') {
     newUserController.isLogged.value = true;
-    Get.offAllNamed('/home');
+    Get.toNamed('/home');
   } 
     
   }

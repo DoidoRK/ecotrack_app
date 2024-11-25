@@ -1,5 +1,6 @@
 import 'package:ecotrack_app/app/controllers/home_controller.dart';
 import 'package:ecotrack_app/app/ui/home_page/widgets/about_widget.dart';
+import 'package:ecotrack_app/app/ui/home_page/widgets/map_widget.dart';
 import 'package:ecotrack_app/app/ui/home_page/widgets/profile_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -17,8 +18,7 @@ class HomePage extends StatelessWidget {
         newUserPhotoAsset: 'assets/images/luva.png',
         onLogout: homeController.onLogout,
       ), // Exemplo de uso de asset local
-      const Center(child: Text('Mapa Widget')),
-      const Center(child: Text('Relatos Widget')),
+      const MapWidget(),
       const AboutWidget(),
     ];
 
@@ -37,10 +37,6 @@ class HomePage extends StatelessWidget {
             BottomNavigationBarItem(
               icon: Icon(Icons.map),
               label: 'Mapa',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.article),
-              label: 'Relatos',
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.info),
